@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#07111f"><title>🪞幻影膠囊安裝入口</title><style>
+:root{--bg:#07111f;--panel:#101b30;--panel2:#17253f;--text:#eff5ff;--muted:#9eb0ca;--line:#2a3f62;--accent:#8cb0ff;--ok:#75d7a6;--warn:#ffd27a;--bad:#ff909b}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#06101e,#0c1830 58%,#121c30);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif;min-height:100vh}
+main{max-width:1160px;margin:auto;padding:24px 16px 90px}h1{font-size:32px;margin:0 0 8px}h2{font-size:20px;margin:0 0 12px}h3{margin:0 0 8px}.lead{color:var(--muted);line-height:1.75}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:12px}.card{background:rgba(16,27,48,.95);border:1px solid var(--line);border-radius:22px;padding:17px;margin:13px 0;box-shadow:0 15px 45px rgba(0,0,0,.2)}
+a.btn,button{display:inline-block;text-decoration:none;background:#2852a4;color:#fff;border:1px solid #4775ce;border-radius:13px;padding:11px 14px;font-weight:750;margin:5px 5px 0 0;cursor:pointer}
+a.secondary,button.secondary{background:#1a2944;border-color:#385073}.badge{display:inline-block;border:1px solid #385276;background:#172640;border-radius:999px;padding:5px 9px;margin:3px;font-size:12px}
+.ok{border-left:4px solid var(--ok)}.warn{border-left:4px solid var(--warn)}.bad{border-left:4px solid var(--bad)}.muted{color:var(--muted)}code{word-break:break-all}table{width:100%;border-collapse:collapse;background:#0c172a;border-radius:16px;overflow:hidden}th,td{border:1px solid #2a3e60;padding:10px;text-align:left;vertical-align:top}th{background:#1d3152}.scroll{overflow:auto}.step{display:flex;gap:12px;align-items:flex-start;margin:10px 0}.num{min-width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#2c58aa;font-weight:800}
+footer{color:var(--muted);margin-top:30px;font-size:13px}.topnav{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.topnav a{color:#dbe7ff;text-decoration:none;border:1px solid #324a70;border-radius:999px;padding:7px 10px}
+</style></head><body><main>
+<h1>🪞幻影膠囊安裝入口</h1><p class="lead">免費膠囊先提供個人保存、聊天、語音、行事曆、檔案、秘密與傳送的入口。進階 AI、企業接入與專業能力另外計價。</p>
+<div class="card ok"><h2>先由老K本人測試</h2><p>這一頁不公開內部主系統、毛利、模型路線或可重建核心，只公開使用者需要知道的功能、限制、權利與來源。</p><a class="btn" href="capsule.html">打開個人幻影膠囊</a></div>
+<div class="card"><h2>🌱開源共學</h2><p>我們正在閱讀可用的開源能力。尚未使用的資源不會假裝已整合；真正採用後會補上來源、授權、測試、回饋與致謝。</p><a class="btn" href="open-source.html">查看來源與致謝</a></div>
+</main><script>
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  navigator.serviceWorker.register('./service-worker.js').catch(() => {});
+}
+</script></body></html>
