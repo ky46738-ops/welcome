@@ -1,0 +1,76 @@
+{
+  "batch": "20260714-import-integrity-03",
+  "role": "🛠️胡哥｜裝備大師",
+  "round1": {
+    "status": "VERIFIED_TRUE",
+    "inventoriedObjects": 6,
+    "classification": {
+      "formalProduct": 0,
+      "directUsePart": 3,
+      "internalSupport": 2,
+      "needsRebuild": 1
+    },
+    "finding": "原始匯入器被錯誤當成可直接使用成品；實際存在預檢拆散、同 ID 覆蓋及多次獨立寫入風險。"
+  },
+  "round2": {
+    "status": "VERIFIED_TRUE",
+    "actions": [
+      "新增 system-install/capsule-import-guard.js，未改寫原始 capsule.js",
+      "完整預檢備份格式、store 型態、有效 ID 與備份內重複 ID",
+      "相同內容同 ID 冪等略過；不同內容同 ID 整批拒絕",
+      "所有 store 使用單一 IndexedDB readwrite transaction 提交",
+      "capsule.html 後載入防護層，匯入入口完成接線",
+      "capsule-selftest.html 增加防護層接線與完整性檢查",
+      "唯一路口與胡哥入口完成批次 03 歸位"
+    ]
+  },
+  "verification": {
+    "repositoryWrite": "VERIFIED_TRUE",
+    "repositoryReadback": "VERIFIED_TRUE",
+    "nodeVmTests": {
+      "status": "VERIFIED_TRUE",
+      "passed": 8,
+      "total": 8
+    },
+    "changedPathAudit": {
+      "status": "VERIFIED_TRUE",
+      "base": "0276844433ca1b3651fe8e875b1354a6ce438e94",
+      "headBeforeExecutionOutput": "b166a4f2e7732a5784d16df2c3224ec3373c083c",
+      "commitCount": 8,
+      "paths": [
+        "index.html",
+        "mounts/huge-gear-master/index.html",
+        "mounts/huge-gear-master/batches/20260714-import-integrity-03/index.html",
+        "mounts/huge-gear-master/batches/20260714-import-integrity-03/Receipt.json",
+        "mounts/huge-gear-master/batches/20260714-import-integrity-03/StaticTestOutput.json",
+        "system-install/capsule-import-guard.js",
+        "system-install/capsule-selftest.html",
+        "system-install/capsule.html"
+      ]
+    },
+    "protectedCoreModified": false,
+    "sourceEvidenceDeleted": false,
+    "iphoneSafariInteractiveTest": "HYPOTHESIS",
+    "publicPagesReadback": "VERIFIED_FALSE"
+  },
+  "publicPagesFailure": {
+    "type": "PUBLIC_PAGES_DEPLOYMENT_STALE",
+    "reason": "公開唯一路口讀回仍是舊版簡頁，尚未顯示 GitHub main 分支上的批次 03 與新版入口。",
+    "immediateRepairs": [
+      "檢查 Deploy to GitHub Pages 最新工作流程是否成功或被停用",
+      "在 Repository Settings → Pages 確認 Source 為 GitHub Actions",
+      "部署後重新讀取唯一路口、capsule.html、capsule-import-guard.js 與批次 03 回執頁"
+    ]
+  },
+  "commits": [
+    "d9324fec2c94f0c781945c4ba591645a0fad34de",
+    "9bfdc3d84fd1aa44e364a6a87b2d577c79b14fc8",
+    "10d682d6b98d3bd723820f6b4f7671073245cc95",
+    "a11eca32c0516da327a72e5538c6fbdae59d8761",
+    "0fe8874d6b08f67b45ee608073e3aecfc4f56af1",
+    "41fd9f9a151162b6a1db33a653a5c53b03619d1f",
+    "a43a91d48de8e76958041716cb1048c0845946fe",
+    "b166a4f2e7732a5784d16df2c3224ec3373c083c"
+  ],
+  "finalStatus": "VERIFIED_TRUE"
+}
