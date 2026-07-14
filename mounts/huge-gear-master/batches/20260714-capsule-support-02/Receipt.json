@@ -19,13 +19,13 @@
     {
       "object": "唯一路口原始碼",
       "original_location": "repository root / index.html",
-      "error_type": "正式成品原始碼已完成，但未部署顯影",
+      "error_type": "膠囊修復狀態與最新回執尚未顯影",
       "asset_use": "公開入口正式成品來源",
-      "repair_action": "保持原檔不覆寫；納入本批部署與讀回檢查",
+      "repair_action": "更新膠囊為靜態實測通過／瀏覽器互動待測；接入批次 02 與自測工具；保留其他入口分類",
       "correct_location": "repository root / index.html",
       "direct_use": "VERIFIED_TRUE",
-      "test_result": "GitHub fetch_file 讀回 Mini、胡哥、待測區與保留資產區",
-      "rollback": "無內容修改；不需回滾",
+      "test_result": "GitHub fetch_file 讀回 Mini、胡哥、膠囊新狀態、批次 02、自測工具與保留資產區",
+      "rollback": "revert commit 33da3d95d1fd8b650c1016dc1a318f603db8bd73，恢復前一 blob 29223429f7c65c33b5e7003cbec14137d76c2c39",
       "status": "VERIFIED_TRUE"
     },
     {
