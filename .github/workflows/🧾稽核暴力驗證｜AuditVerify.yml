@@ -17,7 +17,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: 唯讀取回稽核投影
-        uses: actions/checkout@v7
+        uses: actions/checkout@v6
         with:
           persist-credentials: false
 
