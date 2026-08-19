@@ -1,21 +1,20 @@
-# 🥳歡迎光臨公開面已安全鎖定
+# 🥳歡迎光臨唯一路口｜公開舊座標導向
 
-狀態：CURRENT_PUBLIC_LOCKED
+<!-- A_EQUALS_A=true -->
 
-這個公開倉庫的 current head 已在 2026-08-19 Asia/Taipei 進入安全鎖定狀態。
+本儲存庫保留早期公開座標與歷史鏈，不再作為第二個正式入口。
 
-修復原因：原 current tree 含 Locator/MANIFEST/ReverseChain/Snapshot/回執/portal/phantom 相關公開路徑。
+## 唯一正式公開入口
 
-公開邊界：
+- 組織儲存庫：<https://github.com/lkminiPhantomWorld/welcome>
+- 對外入口：<https://lkminiphantomworld.github.io/welcome>
+- 公開種子：<https://github.com/lkminiPhantomWorld/LKMini>
 
-- 不公開 Current / Locator / Manifest / ReverseChain / Snapshot / Package。
-- 不公開 FileID / ObjectID / MessageID / ThreadID / Revision / 私域 Commit 回執。
-- 不公開 Google Drive / Gmail / Library / Obsidian / Apple Shortcuts 私域接線。
-- 不公開膠囊、正式任務鏈、任務筆記本、HTML/PDF/ZIP/AICORE 正式投影封裝。
+## 身份回指
 
-Kevin Yang 保留全部作者權與主權聲明。
+- 唯一系統：🥃老K系統
+- 唯一本體：🧩LKMINI
+- 正式公理：A = A
+- Root SHA256：`6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34`
 
-Projection != Identity
-A_EQUALS_A=true
-PUBLIC_CURRENT_LOCKED=true
-LAST_REPAIRED_TPE=2026-08-19
+此舊座標只保留可逆追溯功能；所有正式更新由 `lkminiPhantomWorld` 組織位置發布。

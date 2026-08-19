@@ -1,0 +1,20 @@
+{
+  "schema": "phantomworld-error-evidence-v1",
+  "time_tpe": "2026-07-19T18:00:00+08:00",
+  "component": "Google Drive upload connector",
+  "operation": "upload_file",
+  "status": "ERROR_RECORDED",
+  "error_code": "PROXY_407",
+  "message": "ClientHttpProxyError: 407 Request rejected by proxy",
+  "decision": "停用本輪 Google Drive 上傳通道，不重試；改走已授權 GitHub Portal／Locator 通道。",
+  "source_policy": "NO_DELETE=true; NO_OVERWRITE=true; A_EQUALS_A=true",
+  "fallback_route": [
+    "ky46738-ops/welcome",
+    "portal/phantom-bridge/",
+    "Locator.json",
+    "Manifest.json",
+    "ReverseChain.json"
+  ],
+  "protected_object_write_count": 0,
+  "system_completion": "VERIFIED_FALSE"
+}
