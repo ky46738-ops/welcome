@@ -1,37 +1,46 @@
-# 🧩｜老K系統最小公開種子｜LKMini
+# 🥃 LKMini — 老K系統公開種子版本
 
-> LKMini 是 🥃老K系統的開源公開種子，由 **Kevin Yang／老K（ky46738-ops，台灣）**設計與撰寫。
+> LKMini is the open-source public seed of the 🥃LK System (老K系統),  
+> designed and authored by **ky46738-ops** (Taiwan).
 
 ---
 
-## 這是什麼？
+## Attribution
 
-LKMini 是 🥃老K系統架構的**最小公開種子**。
-它用來界定可公開元件與私有引擎內部內容之間的邊界。
+- **Original Author:** ky46738-ops
+- **System Name:** 🥃老K系統 (LK System)
+- **Public Seed Name:** LKMini
+- **First Published:** 2026-05-17
+- **License:** MIT
 
-- 單一核心架構：🥃永恆核心
-- 保護角色：🎩大管家負責守護設定
-- 公開／私有邊界在儲存庫層級執行
-- 所有主張都必須可驗證、可追蹤
-- 核心公理：`A_EQUALS_A=true`
+---
 
-## 種子內的檔案
+## What is LKMini?
 
-| 原檔名 | 中文用途 |
-|---|---|
-| `README.md` | 本說明書 |
-| `LICENSE` | MIT 開源授權 |
-| `NOTICE.md` | 作者歸屬聲明 |
-| `LKMini.svg` | 官方圖示 |
-| `PUBLIC_PRIVATE_BOUNDARY.md` | 公開／私有邊界定義 |
-| `.github/workflows/gatekeeper.yml` | 持續整合完整性檢查 |
-| `tools/verify_lkmini.py` | LKMini 驗證工具 |
-| `SHA256SUMS` | 檔案雜湊驗證清單 |
+LKMini is the minimal public seed of the LK System architecture.  
+It defines the boundary between public-facing components and private engine internals.  
+All modules, roles, engines, and UI must mount to the single 🥃永恆核心 (Eternal Core).  
+No parallel cores. No bypassing the core. No overwriting protected settings.
 
-## 公開邊界
+---
 
-這個儲存庫只公開已授權的最小種子、規格與驗證方法；不公開私有憑證、登入資料、內部控制內容或未授權來源。
+## Core Principles
 
-## 授權
+- Single core architecture (🥃永恆核心)
+- Gatekeeper role (🎩大管家) protects all settings
+- Public/Private boundary enforced at repo level
+- All claims must be verifiable and traceable
+- A_EQUALS_A=true
 
-採用 MIT 開源授權。完整內容請看 [`LICENSE`](./LICENSE)。
+---
+
+## Verification
+
+This repository is protected by the Gatekeeper workflow.  
+All required files are hash-verified via SHA256SUMS on every push.
+
+---
+
+## License
+
+MIT License. See [LICENSE](./LICENSE) for details.
